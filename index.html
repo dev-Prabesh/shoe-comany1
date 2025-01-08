@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="scroll-smooth width-[100%] h-[100%] margin-[0px] padding-[0px] overflow-x-hidden" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body
+    class="width-[100%] h-[100%] margin-[0px] padding-[0px] overflow-x-hidden                bg-slate-950 md:bg-black text-white ">
+    <header
+        class=" z-20 backdrop-blur-[5px]    px-6 md:px-12 max-w-[1440px] left-[50%] -translate-x-[50%] flex fixed w-full items-center justify-between">
+        <a href="#">
+            <img class="w-[90px] md:w-[128px]" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="     hidden md:block space-x-6 lg:text-2xl lg:space-x-8  font-bold ">
+            <a href="#hero">Home</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <button id="hamburger-icon" class="md:hidden">
+            <i class="fa-solid fa-bars text-4xl"></i>
+        </button>
+
+        <div id="themenu" class="hidden absolute right-0 top-[0%]" id="menus">
+            <div id="nav"
+                class="flex flex-col p-7 relative gap-4 text-2xl font-bold backdrop-blur-[10px] bg-gray-300 bg-opacity-50 h-[402px] w-[280px]">
+                <i id="thearrow" class="fa-solid fa-arrow-right-long absolute right-5"></i>
+                <a class="mt-5" href="#hero">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+
+    </header>
+    <section id="hero"
+        class="bg-[url('./images/bgroad.png')] pt-36 bg:cover md:bg-contain px-6 md:px-12 max-w-[1440px] mx-auto bg-right bg-no-repeat">
+        <div class="flex md:flex-row flex-col max-w-6xl md:items-center justify-between mx-auto">
+            <h1 class="text-4xl md:text-7xl lg:text-8xl lg:leading-[110px] font-bold leading-[48px] md:leading-[100px]">THE<br>SHOE<br>COMPANY</h1>
+            <div>
+                <img class="w-full max-w-[600px]" src="./images/the-white-shoe-hero-image 1 (1).png"
+                    alt="hero section white shoe image">
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works" class=" section-container pt-32">
+        <h2 class="mb-16 text-center text-3xl font-bold max-w-md mx-auto">Have they finally made the perfect workout
+            shoe?</h2>
+        <div class="relative max-w-2xl mx-auto xl:mt-120   xl:pt-0 pt-60 pl-10 xl:mt-12">
+            <img class="w-full translate-y-6 rotate-6 p-8 media580:p-0 media440:p-0 xl:rotate-0 max-w-2xl"
+                src="./images/how-it-works-image 1 (1).png" alt="">
+            <div class="max-w-[200px] -top-2 xl:max-w-xs absolute xl:-translate-x-full">
+                <h3 class="text-lg media560:text-2xl font-bold ">THE HEEL</h3>
+                <p class="text-xs media580:text-lg">The heel is well-built, has appropriate elevation and is not too
+                    rigid.</p>
+                <img class="w-32 pt-12 media580:pt-0 xl:w-[55%] rotate-45 xl:rotate-0 xl:ml-auto"
+                    src="./images/arrow-1 1.png" alt="arrow-1">
+            </div>
+
+            <div class="max-w-[200px] top-16 xl:max-w-xs absolute right-0 xl:-right-52">
+                <img class="w-32  media580:w-auto xl:-ml-16  translate-y-full  media580:translate-y-56 xl:translate-y-[0px] rotate-[120deg] xl:rotate-[0deg]"
+                    src="./images/arrow-2 1.png" alt="arrow-1">
+                <h3 class="-mt-24 xl:ml-16 text-lg media560:text-2xl font-bold ">THE HEEL</h3>
+                <p class="text-xs xl:ml-16 media580:text-lg">The heel is well-built, has appropriate elevation and is
+                    not too rigid.</p>
+            </div>
+
+            <div class="max-w-[200px] xl:max-w-xs absolute -bottom-24">
+                <img class="-mb-10 ml-auto" src="./images/arrow-3 1.png" alt="arrow-1">
+                <h3 class="text-lg media560:text-2xl font-bold ">THE HEEL</h3>
+                <p class="text-xs media580:text-lg ">The heel is well-built, has appropriate elevation and is not too
+                    rigid.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- can be removed below this if bychance anything goes wrong. -->
+    <section id="about" class="max-w-[1400px] mx-auto xl:flex-row  mt-[222px] bg-pink flex flex-col justify-between">
+        <h2 class="mx-auto xl:hidden mb-8  font-bold text-6xl">About Us!</h2>
+        <div class="xl:w-[50%]">
+            <img src="images/pantandshoe.png" class="w-full" alt="">
+        </div>
+        <div class="xl:px-20  px-10 py-10 xl:w-[50%] xl:py-40">
+            <h2 class="hidden xl:block   font-bold text-6xl">About Us!</h2>
+            <p class="text-[30px] md:text-[23px]"><br>For each one of those shoe sweethearts out there, THE SHOE COMPANY
+                offer the one-stop goal to pick the
+                correct match of footwear. <br> <br>
+                <span class="hidden md:block">Gone are the days when you needed to go from store to store to locate the
+                    correct style and size for
+                    yourself. <br><br></span>
+                At THE SHOE COMPANY, you can locate a vast accumulation of dashing footwear in all sizes and styles, all
+                inside a couple of snaps. <br><br>
+                <span class="hidden md:block">Simple right? Not just we are here to spare your time, we are putting
+                    forth you the most dazzling
+                    footwear alternatives from
+                    all the first-rate brands like DAVINCHI, PRINCESS, and SIGNATURE. At ‘Organization Name’, we offer
+                    men,
+                    ladies, and child’s shoes perfect for any and each event.</span>
+            </p>
+        </div>
+    </section>
+    <section id="testimonials" class="mx-auto max-w-[1440px] bg-testimonial-section object-cover">
+        <h2 class="text-4xl sm:text-6xl font-bold text-center mt-8 pt-8 ">What People are saying about THE SHOE COMAPNY
+            ?</h2>
+        <div class="text-center flex md:flex-row flex-col items-center  gap-16 justify-between mt-16 max-w-5xl mx-auto">
+            <div class="w-60">
+                <img class="w-full mb-4" src="images/personone.png" alt="">
+                <p>“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the design
+                    and build quality.”</p>
+            </div>
+            <div class="w-72">
+                <img class="w-full mb-4" src="images/person2.png" alt="">
+                <p>“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the design
+                    and build quality.”</p>
+            </div>
+            <div class="w-60">
+                <img class="w-full mb-4" src="images/person3.png" alt="">
+                <p>“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the design
+                    and build quality.”</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="mx-auto  max-w-[1440px] mt-20 flex flex-col sm:flex-row section-container">
+        <div class="flex gap-16  p-7 flex-col sm:flex-row justify-between">
+            <div class="flex flex-col sm:items-center sm:justify-center">
+                <h2 class="text-5xl font-bold">Contact Us</h2>
+                <p class="text-2xl mt-16 mb-16 ">THE SHOE COMPANY,<br>
+                    Dallas,Texas, USA <br>
+                    +1 5590 1120 9910
+                </p>
+                <div id="icons"></div>
+            </div>
+            <div id="img" class="sm:w-[50%]">
+                <img class="w-full" src="images/Google-Maps 1 (1).png" alt="">
+            </div>
+        </div>
+
+        <p class="sm:hidden mx-auto">Made with ❤ by Prabesh Dahal</p>
+    </section>
+</body>
+
+</html>
